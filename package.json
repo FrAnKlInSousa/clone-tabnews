@@ -4,6 +4,7 @@
   "description": "Adiquirindo conhecimento",
   "main": "index.js",
   "scripts": {
+    "predev": "clear",
     "dev": "npm run up && next dev",
     "up": "docker compose -f infra/compose.yaml up -d",
     "down": "docker compose -f infra/compose.yaml down",
