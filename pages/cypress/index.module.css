@@ -1,0 +1,26 @@
+.container {
+  background-color: #e7deaf;
+  padding: 20px;
+  text-align: center;
+  justify-items: center;
+}
+
+.studyContents {
+  background-color: #d7c097;
+  border: 1px solid black;
+  border-radius: 33;
+  width: 25%;
+}
+
+.buttonOk {
+  background-color: aqua;
+  border: 0;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0 20px;
+  line-height: 2.5;
+}
+/* D7C097
+E7DEAF
+73AF6F
+007E6E */
