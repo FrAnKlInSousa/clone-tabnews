@@ -8,17 +8,21 @@
 .studyContents {
   background-color: #d7c097;
   border: 1px solid black;
-  border-radius: 33;
+  border-radius: 15;
   width: 25%;
+  padding: 10px;
 }
 
-.buttonOk {
-  background-color: aqua;
+.button {
+  margin: 10px 0;
+  background-color: #73af6f;
   border: 0;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 0 20px;
   line-height: 2.5;
+  cursor: pointer;
+  width: 80%;
 }
 /* D7C097
 E7DEAF

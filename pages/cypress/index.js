@@ -13,23 +13,35 @@ export default function Cypress() {
       </div>
 
       <div data-test="studyContents" className={clsx(styles.studyContents)}>
-        <a data-test="from" href="/cypress/forms">
-          <p>Formulários</p>
+        <a data-test="form-anchor" href="/cypress/forms">
+          <button data-test="form-button" className={clsx(styles.button)}>
+            Formulários
+          </button>
         </a>
         <a data-test="button" href="/cypress/buttons">
-          <p>Botões</p>
+          <button data-test="form-button" className={clsx(styles.button)}>
+            Botões
+          </button>
         </a>
         <a data-test="radio-button" href="/cypress/radio-buttons">
-          <p>Radio buttons</p>
+          <button data-test="form-button" className={clsx(styles.button)}>
+            Radio buttons
+          </button>
         </a>
         <a data-test="toggle" href="/cypress/toggles">
-          <p>Toggles</p>
+          <button data-test="form-button" className={clsx(styles.button)}>
+            Toggles
+          </button>
         </a>
         <a data-test="checkbox" href="/cypress/checkboxes">
-          <p>Checkboxes</p>
+          <button data-test="form-button" className={clsx(styles.button)}>
+            Checkboxes
+          </button>
         </a>
         <a data-test="dropdown" href="/cypress/dropdowns">
-          <p>Dropdown</p>
+          <button data-test="form-button" className={clsx(styles.button)}>
+            Dropdown
+          </button>
         </a>
       </div>
     </div>
