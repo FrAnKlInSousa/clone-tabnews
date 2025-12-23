@@ -2,9 +2,3 @@ body {
   background-color: #d7c097;
   margin: 0;
 }
-
-@media (max-width: 600px) {
-  body {
-    background-color: #e7deaf;
-  }
-}
