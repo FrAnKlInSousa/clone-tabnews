@@ -19,6 +19,9 @@ function Home() {
         <li>
           <a href="/front/movies-list">Lista de filmes</a>
         </li>
+        <li>
+          <a href="../cypress">Cypress</a>
+        </li>
       </ul>
     </div>
   );
