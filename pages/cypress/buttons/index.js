@@ -17,15 +17,20 @@ export default function Buttons() {
           <button
             data-test="button"
             className={clsx(styles.button)}
-            onClick={() => setLabel('Clicou')}
+            onClick={() => setLabel('Parabéns, gênio!')}
           >
             {label}
           </button>
         </div>
         <div className={clsx(styles.nextContainer)}>
+          <a href="/cypress">
+            <button data-test="next-button" className={clsx(styles.button)}>
+              Voltar
+            </button>
+          </a>
           <a href="./buttons/case-2">
             <button data-test="next-button" className={clsx(styles.button)}>
-              Próximo teste
+              Próximo
             </button>
           </a>
         </div>
