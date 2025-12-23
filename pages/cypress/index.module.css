@@ -11,6 +11,8 @@
   border-radius: 15;
   width: 25%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
@@ -22,7 +24,7 @@
   padding: 0 20px;
   line-height: 2.5;
   cursor: pointer;
-  width: 80%;
+  width: 30%;
 }
 /* D7C097
 E7DEAF
