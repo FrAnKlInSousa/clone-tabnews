@@ -1,0 +1,30 @@
+.container {
+  text-align: center;
+}
+
+.movies {
+  /* justify-items: center;
+  flex-wrap: wrap; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.movieFrame {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.posterImg {
+  width: 200px;
+  height: 300px;
+}
+
+.p {
+  width: 100%;
+  margin-top: 12px;
+  margin-left: 6px;
+  text-align: left;
+}
