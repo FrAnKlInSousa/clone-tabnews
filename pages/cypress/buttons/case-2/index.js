@@ -1,31 +1,38 @@
+import { useState, useEffect } from 'react';
 import styles from './index.module.css';
 import clsx from 'clsx';
-import { useState } from 'react';
 
-export default function Buttons() {
-  const [label, setLabel] = useState('Confirmar');
+export default function CasoDois() {
+  const [clicked, setClicked] = useState(false);
 
   return (
     <div className={clsx(styles.container)}>
       <h1>Cenários de testes com botões</h1>
-      <h2>Caso 1</h2>
+      <h2>Caso 2</h2>
       <div className={clsx(styles.externalBox)}>
         <div className={clsx(styles.internalBox)}>
           <p className={clsx(styles.paragraph)}>
-            Mudar texto do botão ao clicar:
+            Mudar a cor do botão para roxo:
           </p>
           <button
             data-test="button"
-            className={clsx(styles.button)}
-            onClick={() => setLabel('Clicou')}
+            className={clsx(styles.button, {
+              [styles.purple]: clicked,
+            })}
+            onClick={() => setClicked(true)}
           >
-            {label}
+            {clicked ? 'Mudou de cor' : 'Clique aqui'}
           </button>
         </div>
         <div className={clsx(styles.nextContainer)}>
-          <a href="./buttons/case-2">
+          <a href="/cypress/buttons/">
             <button data-test="next-button" className={clsx(styles.button)}>
-              Próximo teste
+              Voltar
+            </button>
+          </a>
+          <a href="/cypress/buttons/case-3">
+            <button data-test="next-button" className={clsx(styles.button)}>
+              Próximo
             </button>
           </a>
         </div>

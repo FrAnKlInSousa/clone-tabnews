@@ -35,8 +35,18 @@
 
 .nextContainer {
   width: 80%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .paragraph {
   margin-top: 0;
 }
+
+.purple {
+  background-color: #c47be4;
+}
+/* D7C097
+E7DEAF
+73AF6F
+007E6E */
