@@ -2,3 +2,7 @@ body {
   background-color: #d7c097;
   margin: 0;
 }
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
