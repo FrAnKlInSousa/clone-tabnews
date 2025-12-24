@@ -13,6 +13,7 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -26,6 +27,7 @@
   cursor: pointer;
   width: 123px;
 }
+
 /* D7C097
 E7DEAF
 73AF6F
@@ -34,8 +36,5 @@ E7DEAF
 @media (max-width: 600px) {
   .studyContents {
     width: 140.25px;
-  }
-  .button {
-    width: 90%;
   }
 }
