@@ -3,28 +3,37 @@ describe('dummy home page', () => {
     cy.visit('/');
   });
 
-  it('check title and subtitle', () => {
-    cy.get('[data-test="title"]').should(
-      'have.text',
-      'Página dummy para treinar automações',
-    );
-  });
+  it('check the buttons behaviors', () => {
+    // tela inicial
+    cy.get('[data-test="button-option"]')
+      .as('button-option')
+      .should('have.text', 'Botões');
 
-  it('check only subtitle', () => {
-    cy.get('[data-test="instructions"]').should(
-      'have.text',
-      'Escolha abaixo o tópico que deseja treinar',
-    );
+    cy.get('@button-option').click();
 
-    cy.get('[data-test="button"]').as('button').should('have.text', 'Botões');
-
-    cy.get('@button').click();
+    // primeiro caso
     cy.url().should('include', '/cypress/buttons');
 
-    cy.get('@button').should('have.text', 'Confirmar').click();
-    cy.get('@button').should('have.text', 'Clicou');
+    cy.get('[data-test="confirm-button"]')
+      .as('confirm-button')
+      .should('have.text', 'Confirmar')
+      .click();
+    cy.get('@confirm-button').should('have.text', 'Parabéns, gênio!');
 
     cy.get('[data-test="next-button"]').click();
-    cy.url().should('include', 'cypress/buttons/caso-2');
+
+    // segundo caso
+    cy.url().should('include', 'cypress/buttons/case-2');
+    cy.get('[data-test="instruction"').should(
+      'have.text',
+      'Mudar a cor do botão para roxo:',
+    );
+
+    cy.get('[data-test="confirm-button"]')
+      .as('confirm-button')
+      .should('have.text', 'Clique aqui')
+      .click()
+      .should('have.text', 'Mudou de cor');
+    cy.get('@confirm-button').should('have.css', 'background-color');
   });
 });
