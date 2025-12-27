@@ -15,7 +15,7 @@ export default function Buttons() {
             Mudar texto do botão ao clicar:
           </p>
           <button
-            data-test="button"
+            data-test="confirm-button"
             className={clsx(styles.button)}
             onClick={() => setLabel('Parabéns, gênio!')}
           >
@@ -24,7 +24,7 @@ export default function Buttons() {
         </div>
         <div className={clsx(styles.nextContainer)}>
           <a href="/cypress">
-            <button data-test="next-button" className={clsx(styles.button)}>
+            <button data-test="previous-button" className={clsx(styles.button)}>
               Voltar
             </button>
           </a>

@@ -13,33 +13,33 @@ export default function Cypress() {
       </div>
 
       <div data-test="studyContents" className={clsx(styles.studyContents)}>
-        <a data-test="form-anchor" href="/cypress/forms">
-          <button data-test="form-button" className={clsx(styles.button)}>
+        <a href="/cypress/forms">
+          <button data-test="form-option" className={clsx(styles.button)}>
             Formulários
           </button>
         </a>
-        <a data-test="button" href="/cypress/buttons">
-          <button data-test="form-button" className={clsx(styles.button)}>
+        <a href="/cypress/buttons">
+          <button data-test="button-option" className={clsx(styles.button)}>
             Botões
           </button>
         </a>
-        <a data-test="radio-button" href="/cypress/radio-buttons">
-          <button data-test="form-button" className={clsx(styles.button)}>
+        <a href="/cypress/radio-buttons">
+          <button data-test="radio-option" className={clsx(styles.button)}>
             Radio buttons
           </button>
         </a>
-        <a data-test="toggle" href="/cypress/toggles">
-          <button data-test="form-button" className={clsx(styles.button)}>
+        <a href="/cypress/toggles">
+          <button data-test="toggle-option" className={clsx(styles.button)}>
             Toggles
           </button>
         </a>
-        <a data-test="checkbox" href="/cypress/checkboxes">
-          <button data-test="form-button" className={clsx(styles.button)}>
+        <a href="/cypress/checkboxes">
+          <button data-test="checkbox-option" className={clsx(styles.button)}>
             Checkboxes
           </button>
         </a>
-        <a data-test="dropdown" href="/cypress/dropdowns">
-          <button data-test="form-button" className={clsx(styles.button)}>
+        <a href="/cypress/dropdowns">
+          <button data-test="dropdown-option" className={clsx(styles.button)}>
             Dropdown
           </button>
         </a>

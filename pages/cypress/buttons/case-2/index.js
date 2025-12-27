@@ -11,11 +11,11 @@ export default function CasoDois() {
       <h2>Caso 2</h2>
       <div className={clsx(styles.externalBox)}>
         <div className={clsx(styles.internalBox)}>
-          <p className={clsx(styles.paragraph)}>
+          <p data-test="instruction" className={clsx(styles.paragraph)}>
             Mudar a cor do botão para roxo:
           </p>
           <button
-            data-test="button"
+            data-test="confirm-button"
             className={clsx(styles.button, {
               [styles.purple]: clicked,
             })}
