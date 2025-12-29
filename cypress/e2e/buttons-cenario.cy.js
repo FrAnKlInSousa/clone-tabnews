@@ -7,7 +7,7 @@ describe('dummy home page', () => {
     // tela inicial
     cy.get('[data-test="button-option"]')
       .as('button-option')
-      .should('have.text', 'Botões');
+      .should('have.text', 'Botão');
 
     cy.get('@button-option').click();
 
