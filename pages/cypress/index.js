@@ -1,4 +1,5 @@
 import styles from './index.module.css';
+import Button from '../../components/button/button.js';
 
 import clsx from 'clsx';
 
@@ -14,34 +15,22 @@ export default function Cypress() {
 
       <div data-test="studyContents" className={clsx(styles.studyContents)}>
         <a href="/cypress/forms">
-          <button data-test="form-option" className={clsx(styles.button)}>
-            Formulários
-          </button>
+          <Button dataTest={'form-option'} buttonText={'Formulário'} />
         </a>
         <a href="/cypress/buttons">
-          <button data-test="button-option" className={clsx(styles.button)}>
-            Botões
-          </button>
+          <Button buttonText="Botão" dataTest="button-option" />
         </a>
         <a href="/cypress/radio-buttons">
-          <button data-test="radio-option" className={clsx(styles.button)}>
-            Radio buttons
-          </button>
+          <Button buttonText={'Radio button'} dataTest={'radio-option'} />
         </a>
         <a href="/cypress/toggles">
-          <button data-test="toggle-option" className={clsx(styles.button)}>
-            Toggles
-          </button>
+          <Button dataTest={'toggle-option'} buttonText={'Toggle'} />
         </a>
         <a href="/cypress/checkboxes">
-          <button data-test="checkbox-option" className={clsx(styles.button)}>
-            Checkboxes
-          </button>
+          <Button dataTest={'checkbox-option'} buttonText={'Checkbox'} />
         </a>
         <a href="/cypress/dropdowns">
-          <button data-test="dropdown-option" className={clsx(styles.button)}>
-            Dropdown
-          </button>
+          <Button dataTest={'dropdown-option'} buttonText={'Dropdown'} />
         </a>
       </div>
     </div>
